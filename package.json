@@ -1,0 +1,23 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "My Electron Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.ace.colink",
+    "productName": "CoLink",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/Logo.png",
+      "sign": false
+    }
+  }
+}

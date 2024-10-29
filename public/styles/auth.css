@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input,button,label{
+    width: 30%;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+input,button{
+    border: 1px solid palevioletred;
+    outline: none;
+    font-size: 20px;
+}
+
+button{
+    color: white;
+    background-color: palevioletred;
+}
+
+button,h1{
+    margin: 20px 0;
+}
+
+#back-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

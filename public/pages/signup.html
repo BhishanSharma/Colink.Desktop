@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoLink - SignUp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html" id="back-btn">< back</a>
+    <h1>Sign Up</h1>
+    <label for="username">username:</label>
+    <input type="text" name="username" id="" />
+    <label for="password">password:</label>
+    <input type="password" name="password" id="" />
+    <button onclick="signUp('home.html')">SignUp</button>
+  </body>
+  <script>
+    const { ipcRenderer } = require("electron");
+
+    function signUp(page) {
+      ipcRenderer.send("navigate-to-page", page);
+    }
+  </script>
+</html>
