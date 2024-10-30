@@ -14,6 +14,7 @@ function createWindow() {
     },
   });
 
+  win.webContents.openDevTools();
   win.loadFile("public/root.html");
   win.removeMenu();
 }
